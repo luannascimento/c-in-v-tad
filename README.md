@@ -22,6 +22,18 @@ ler um char atendendo a validação de uma função de callback
 <p>protótipo</p>
 <i>static char readChar( char* msg, int (*cb)( char ) );</i>
 
+<h3>readString</h3>
+<p>descrição</p>
+ler uma string
+<p>protótipo</p>
+<i>static char* readString( void );</i>
+
+<h3>readValue</h3>
+<p>descrição</p>
+ler um valor em string e faz a validação de acordo com a função de callback
+<p>protótipo</p>
+<i>static char* readValue( char* msg, int (*cb)( char* ) );</i>
+
 <h2>TAD valid</h2>
 
 <h3>isAlpha</h3>

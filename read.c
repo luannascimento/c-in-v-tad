@@ -28,6 +28,44 @@ static char readChar( char* msg, int(*cb)(char) )
     return c;
 }
 
+//ler strings
+static char* readString()
+{
+    size_t size = 1;
+    char v[120];
+    char* str;
+    scanf("%119[^\n]s",v);
+    cleanBuffer();
+    size += strlen(v);
+    str = (char*)calloc(size,sizeof(char));
+    if( !str )
+    {
+	fprintf(stdout,"Erro Memoria Insuficinete\n");
+	exit(1);
+    }
+    strcpy(str,v);
+    return str;
+}
+
+//função generica ler e valida valores
+static char* readValue(char* msg,int (*cb)(char*))
+{
+    int v;
+    char* value = NULL;
+    do{
+	fprintf(stdout,"%s",msg);
+	value = readString();
+	if( !( v = cb( value ) ) )
+	{
+	    printf("\e[H\e[2J");
+	    fprintf(stdout,"%s",INVALID_MSG);
+	    free(value);
+	    value = NULL;
+	}
+    }while( !v );	
+    return value;
+}
+
 //ler um caractere do alfabeto
 char readAlpha(char* msg)
 {
