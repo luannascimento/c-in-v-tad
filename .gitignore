@@ -1,0 +1,7 @@
+main
+main.c
+main.o
+Makefile
+input.txt
+read.o
+valid.o
