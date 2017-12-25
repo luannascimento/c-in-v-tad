@@ -67,3 +67,9 @@ ler um caractere do alfabeto
 ler um digito númerico
 <p>protótipo</p>
 <i>char readDigit( char* msg );</i>
+
+<h3>readName</h3>
+<p>descrição</p>
+ler um nome com letras do alfabeto com espaços e no minimo duas letras
+<p>protótipo</p>
+<i>char* readName( char* msg );</i>

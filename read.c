@@ -77,3 +77,9 @@ char readDigit(char* msg)
 {
     return readChar( msg, isDigit );
 }
+
+//ler um nome de uma pessoa
+char* readName( char* msg )
+{
+    return readValue( msg, isName );
+}
