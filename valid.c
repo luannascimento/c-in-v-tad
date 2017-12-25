@@ -18,3 +18,15 @@ static int match( char* str, char* regex )
 						    
     return 1;
 }
+
+//verifica se o caractere e uma letra do alfabeto
+int isAlpha( char c )
+{
+    return isalpha( c ) ? 1 : 0;
+}
+
+//verifica se o caractere e um digito numerico
+int isDigit( char d )
+{
+    return isdigit( d ) ? 1 : 0;
+}

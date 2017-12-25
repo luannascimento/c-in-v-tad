@@ -21,3 +21,17 @@ Limpa o buffer do techado e arquivos
 ler um char atendendo a validação de uma função de callback
 <p>protótipo</p>
 <i>static char readChar( char* msg, int (*cb)( char ) );</i>
+
+<h2>TAD valid</h2>
+
+<h3>isAlpha</h3>
+<p>descrição</p>
+valida um caractere do alfabeto
+<p>protótipo</p>
+<i>int isAlpha( char c);</i>
+
+<h3>isDigit</h3>
+<p>descrição</p>
+valida um digito númerico
+<p>protótipo</p>
+<i>int isDigit( char d);</i>
