@@ -36,7 +36,13 @@ valida um digito númerico
 <p>protótipo</p>
 <i>int isDigit( char d);</i>
 
-<h2>TAD valid</h2>a
+<h3>isName</h3>
+<p>descrição</p>
+valida se o name so possui letras do alfabeto e espaços com no minimo duas letras letras
+<p>protótipo</p>
+<i>int isName( char* name );</i>
+
+<h2>TAD read</h2>
 
 <h3>readAlpha</h3>
 <p>descrição</p>

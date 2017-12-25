@@ -30,3 +30,9 @@ int isDigit( char d )
 {
     return isdigit( d ) ? 1 : 0;
 }
+
+//valida se o name so possui letras do alfabeto e espaços com no minimo 2 letras
+int isName( char* name )
+{
+    return match( name, "^([A-Z a-z À-ú]{1}[A-Z a-z À-ú]+)$" );
+}
