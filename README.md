@@ -35,3 +35,17 @@ valida um caractere do alfabeto
 valida um digito númerico
 <p>protótipo</p>
 <i>int isDigit( char d);</i>
+
+<h2>TAD valid</h2>a
+
+<h3>readAlpha</h3>
+<p>descrição</p>
+ler um caractere do alfabeto
+<p>protótipo</p>
+<i>char readAlpha( char* msg );</i>
+
+<h3>readDigit</h3>
+<p>descrição</p>
+ler um digito númerico
+<p>protótipo</p>
+<i>char readDigit( char* msg );</i>

@@ -27,3 +27,15 @@ static char readChar( char* msg, int(*cb)(char) )
     }while(!v);
     return c;
 }
+
+//ler um caractere do alfabeto
+char readAlpha(char* msg)
+{
+    return readChar( msg, isAlpha );
+}
+
+//ler um digito
+char readDigit(char* msg)
+{
+    return readChar( msg, isDigit );
+}
