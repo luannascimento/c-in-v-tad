@@ -54,6 +54,12 @@ valida se o name so possui letras do alfabeto e espaços com no minimo duas letr
 <p>protótipo</p>
 <i>int isName( char* name );</i>
 
+<h3>isFloat</h3>
+<p>descrição</p>
+valida se uma string e um valor real
+<p>protótipo</p>
+<i>int isFloat( char* real );</i>
+
 <h2>TAD read</h2>
 
 <h3>readAlpha</h3>

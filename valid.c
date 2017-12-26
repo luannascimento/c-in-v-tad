@@ -36,3 +36,9 @@ int isName( char* name )
 {
     return match( name, "^([A-Z a-z À-ú]{1}[A-Z a-z À-ú]+)$" );
 }
+
+//valida se um numero e float ou double
+int isFloat( char* real )
+{
+    return match( real, "^([-]?[0-9]+[.][0-9]+)$" );
+}
