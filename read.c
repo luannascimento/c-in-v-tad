@@ -88,7 +88,18 @@ char* readName( char* msg )
 float readFloat( char* msg )
 {
     char* p = readValue( msg, isFloat );
-    float v = atof( p );
+    float v;
+    sscanf( p, "%f", &v );
+    free( p );
+    return v;
+}
+
+//ler um double
+double readDouble( char* msg )
+{
+    char* p = readValue( msg, isFloat );
+    double v;
+    sscanf( p, "%lf", &v );
     free( p );
     return v;
 }

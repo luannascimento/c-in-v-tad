@@ -40,5 +40,7 @@ int isName( char* name )
 //valida se um numero e float ou double
 int isFloat( char* real )
 {
-    return match( real, "^([-]?[0-9]+[.][0-9]+)$" );
+    return match( real, "^([-]?[0-9]+([.][0-9]+)?)$" );
 }
+
+

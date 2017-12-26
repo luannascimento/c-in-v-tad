@@ -4,4 +4,5 @@ extern char readAlpha( char* );
 extern char readDigit( char* );
 extern char* readName( char* );
 extern float readFloat( char* );
+extern double readDouble( char* );
 #endif

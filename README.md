@@ -85,3 +85,9 @@ ler um nome com letras do alfabeto com espaços e no minimo duas letras
 ler um valor real
 <p>protótipo</p>
 <i>float readFloat( char* msg );</i>
+
+<h3>readDouble</h3>
+<p>descrição</p>
+ler um valor real com maior precisão
+<p>protótipo</p>
+<i>double readDouble( char* msg );</i>
