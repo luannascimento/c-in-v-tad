@@ -79,3 +79,9 @@ ler um digito númerico
 ler um nome com letras do alfabeto com espaços e no minimo duas letras
 <p>protótipo</p>
 <i>char* readName( char* msg );</i>
+
+<h3>readFloat</h3>
+<p>descrição</p>
+ler um valor real
+<p>protótipo</p>
+<i>float readFloat( char* msg );</i>

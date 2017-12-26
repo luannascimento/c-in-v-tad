@@ -83,3 +83,12 @@ char* readName( char* msg )
 {
     return readValue( msg, isName );
 }
+
+//ler um float
+float readFloat( char* msg )
+{
+    char* p = readValue( msg, isFloat );
+    float v = atof( p );
+    free( p );
+    return v;
+}
